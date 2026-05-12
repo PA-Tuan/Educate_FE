@@ -1,0 +1,161 @@
+export const days = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+
+export const hours = ["7:00", "8:00", "9:00", "10:00", "11:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"];
+
+export const events = [
+  { day: 0, hour: 0, title: "TOEIC 600 - Buổi sáng", teacher: "Nguyễn Minh Tuấn", room: "P.101", color: "bg-primary-light border-primary text-primary" },
+  { day: 1, hour: 4, title: "IELTS 6.5 - Buổi chiều", teacher: "Trần Thị Hoa", room: "P.102", color: "bg-violet-50 border-violet-400 text-violet-700" },
+  { day: 2, hour: 0, title: "TOEIC 600 - Buổi sáng", teacher: "Nguyễn Minh Tuấn", room: "P.101", color: "bg-primary-light border-primary text-primary" },
+  { day: 4, hour: 2, title: "MOV Basic", teacher: "Phạm Văn Lộc", room: "P.103", color: "bg-emerald-50 border-emerald-400 text-emerald-700" },
+  { day: 5, hour: 1, title: "STR Weekend", teacher: "Đỗ Thị Lan", room: "P.201", color: "bg-amber-50 border-amber-400 text-amber-700" },
+  { day: 6, hour: 1, title: "STR Weekend", teacher: "Đỗ Thị Lan", room: "P.201", color: "bg-amber-50 border-amber-400 text-amber-700" },
+];
+
+export const calls = [
+  { id: "GD-001", customer: "Nguyễn Trung Hiếu", phone: "0909141284", duration: "09:14:00", result: "Liên hệ thành công", agent: "Trần Minh Đức", time: "21/06/2024 03:14:00", type: "out" },
+  { id: "GD-002", customer: "Đào Thị Hồng Thắm", phone: "0912345678", duration: "05:32:00", result: "Tư vấn kiểm tra đầu vào", agent: "Vũ Thị Hằng", time: "20/06/2024 14:30:00", type: "in" },
+  { id: "GD-003", customer: "Trần Văn Quyết", phone: "0977123456", duration: "00:00:00", result: "Không nghe máy", agent: "Trần Minh Đức", time: "19/06/2024 10:00:00", type: "missed" },
+  { id: "GD-004", customer: "Nguyễn Văn Nam", phone: "0966666666", duration: "12:05:00", result: "Tư vấn khóa học", agent: "Vũ Thị Hằng", time: "18/06/2024 09:00:00", type: "out" },
+];
+
+export const classes = [
+  { id: "LH-001", name: "TOEIC 600 - Buổi sáng", course: "TOEIC", teacher: "Nguyễn Minh Tuấn", students: 18, maxStudents: 20, schedule: "T2-T4-T6 | 7:30 - 9:30", status: "Đang học", startDate: "01/03/2024", endDate: "01/06/2024" },
+  { id: "LH-002", name: "IELTS 6.5 - Buổi tối", course: "IELTS", teacher: "Trần Thị Hoa", students: 15, maxStudents: 15, schedule: "T3-T5-T7 | 18:00 - 20:00", status: "Đang học", startDate: "15/03/2024", endDate: "15/07/2024" },
+  { id: "LH-003", name: "MOV Basic - Cuối tuần", course: "MOV", teacher: "Phạm Văn Lộc", students: 12, maxStudents: 20, schedule: "T7-CN | 9:00 - 11:30", status: "Đang học", startDate: "01/04/2024", endDate: "01/07/2024" },
+  { id: "LH-004", name: "TOEIC 450 - Cấp tốc", course: "TOEIC", teacher: "Lê Thị Mai", students: 8, maxStudents: 10, schedule: "T2-T4-T6-T7 | 14:00 - 16:00", status: "Sắp khai giảng", startDate: "01/05/2024", endDate: "01/07/2024" },
+  { id: "LH-005", name: "PRM Advanced - Buổi tối", course: "PRM", teacher: "Nguyễn Văn Hùng", students: 20, maxStudents: 20, schedule: "T2-T4 | 19:00 - 21:00", status: "Hoàn thành", startDate: "01/01/2024", endDate: "01/04/2024" },
+  { id: "LH-006", name: "STR Advanced - Cuối tuần", course: "STR", teacher: "Đỗ Thị Lan", students: 10, maxStudents: 15, schedule: "CN | 14:00 - 17:00", status: "Đang học", startDate: "10/04/2024", endDate: "10/07/2024" },
+];
+
+export const courses = [
+  { id: "KH-001", name: "TOEIC Cơ bản", code: "TOEIC-BASIC", classes: 4, students: 72, duration: "3 tháng", fee: "3.500.000 ₫", status: "Đang mở" },
+  { id: "KH-002", name: "IELTS 6.5+", code: "IELTS-65", classes: 2, students: 30, duration: "5 tháng", fee: "6.000.000 ₫", status: "Đang mở" },
+  { id: "KH-003", name: "MOV Foundation", code: "MOV-FOUND", classes: 1, students: 12, duration: "2 tháng", fee: "2.000.000 ₫", status: "Đang mở" },
+  { id: "KH-004", name: "PRM Advanced", code: "PRM-ADV", classes: 0, students: 0, duration: "4 tháng", fee: "5.000.000 ₫", status: "Tạm dừng" },
+  { id: "KH-005", name: "STR Speaking", code: "STR-SPEAK", classes: 1, students: 10, duration: "2 tháng", fee: "2.500.000 ₫", status: "Đang mở" },
+];
+
+export const customers = [
+  { id: "CT-001", name: "Nguyễn Trung Hiếu", email: "tungtranthe@gmail.com", phone: "0909141284", source: "Facebook", status: "Đang diễn ra", assignees: ["A", "B", "C"], students: 2, date: "14/12/2024" },
+  { id: "CT-002", name: "Đào Thị Hồng Thắm", email: "hocthu@gmail.com", phone: "0912345678", source: "Zalo", status: "Đã chuyển đổi", assignees: ["D"], students: 1, date: "13/12/2024" },
+  { id: "CT-003", name: "Vũ Thị Vân Anh", email: "vuvannanh@gmail.com", phone: "0987654321", source: "Website", status: "Mới", assignees: ["A", "E"], students: 0, date: "12/12/2024" },
+  { id: "CT-004", name: "Trần Văn Quyết", email: "tranvanquyet@gmail.com", phone: "0977123456", source: "Giới thiệu", status: "Đang diễn ra", assignees: ["B"], students: 3, date: "11/12/2024" },
+  { id: "CT-005", name: "Nguyễn Văn Nam", email: "nguyenvannam@gmail.com", phone: "0966666666", source: "Facebook", status: "Tư vấn", assignees: ["C", "D"], students: 1, date: "10/12/2024" },
+];
+
+export const attendanceData = [
+  { name: "Đúng giờ", value: 30, color: "#2563EB" },
+  { name: "Đi muộn", value: 20, color: "#F59E0B" },
+  { name: "Nghỉ có phép", value: 10, color: "#10B981" },
+  { name: "Nghỉ không phép", value: 25, color: "#EF4444" },
+  { name: "Chưa điểm danh", value: 15, color: "#9CA3AF" },
+];
+
+export const homeworkData = [
+  { name: "Đã chấm", value: 15, color: "#047857" },
+  { name: "Đã nộp", value: 35, color: "#10B981" },
+  { name: "Chưa nộp", value: 25, color: "#34D399" },
+  { name: "Hết hạn", value: 25, color: "#D1FAE5" },
+];
+
+export const progressData = [
+  { name: "TOEIC", percent: 40 },
+  { name: "IELTS", percent: 60 },
+  { name: "MOV", percent: 70 },
+  { name: "PRM", percent: 10 },
+  { name: "STR", percent: 90 },
+];
+
+export const revenueData = [
+  { month: "T1", revenue: 12 },
+  { month: "T2", revenue: 19 },
+  { month: "T3", revenue: 15 },
+  { month: "T4", revenue: 25 },
+  { month: "T5", revenue: 22 },
+  { month: "T6", revenue: 30 },
+  { month: "T7", revenue: 28 },
+];
+
+export const recentStudents = [
+  { name: "Nguyễn Trung Hiếu", class: "TOEIC 600", status: "Đang học", date: "12/04/2024" },
+  { name: "Đào Thị Hồng Thắm", class: "IELTS 6.5", status: "Đang học", date: "11/04/2024" },
+  { name: "Vũ Thị Vân Anh", class: "TOEIC 450", status: "Hoàn thành", date: "10/04/2024" },
+  { name: "Trần Văn Quyết", class: "PRM Basic", status: "Tạm dừng", date: "09/04/2024" },
+  { name: "Nguyễn Văn Nam", class: "STR Advanced", status: "Đang học", date: "08/04/2024" },
+];
+
+export const monthlyData = [
+  { month: "T1", income: 45, expense: 12 },
+  { month: "T2", income: 52, expense: 15 },
+  { month: "T3", income: 48, expense: 10 },
+  { month: "T4", income: 70, expense: 18 },
+  { month: "T5", income: 63, expense: 20 },
+  { month: "T6", income: 85, expense: 22 },
+];
+
+export const transactions = [
+  { id: "HD-001", student: "Nguyễn Trung Hiếu", type: "Nạp học phí", amount: "+4.500.000 ₫", method: "Chuyển khoản", date: "12/04/2024", status: "Thành công" },
+  { id: "HD-002", student: "Đào Thị Hồng Thắm", type: "Nạp học phí", amount: "+3.000.000 ₫", method: "Tiền mặt", date: "11/04/2024", status: "Thành công" },
+  { id: "HD-003", student: "Vũ Thị Vân Anh", type: "Hoàn học phí", amount: "-1.500.000 ₫", method: "Chuyển khoản", date: "10/04/2024", status: "Thành công" },
+  { id: "HD-004", student: "Trần Văn Quyết", type: "Nạp học phí", amount: "+2.000.000 ₫", method: "Momo", date: "09/04/2024", status: "Đang xử lý" },
+  { id: "HD-005", student: "Nguyễn Văn Nam", type: "Nạp học phí", amount: "+5.000.000 ₫", method: "Chuyển khoản", date: "08/04/2024", status: "Thành công" },
+  { id: "HD-006", student: "Lê Thị Mai", type: "Hoàn học phí", amount: "-500.000 ₫", method: "Tiền mặt", date: "07/04/2024", status: "Thành công" },
+];
+
+export const homework = [
+  { id: "BT-001", title: "TOEIC Practice Test 1 - Part 5 & 6", class: "TOEIC 600", deadline: "20/04/2024", submitted: 14, total: 18, status: "Đang mở" },
+  { id: "BT-002", title: "IELTS Writing Task 2 - Opinion Essay", class: "IELTS 6.5", deadline: "22/04/2024", submitted: 10, total: 15, status: "Đang mở" },
+  { id: "BT-003", title: "MOV Vocabulary Unit 3", class: "MOV Basic", deadline: "18/04/2024", submitted: 12, total: 12, status: "Hết hạn" },
+  { id: "BT-004", title: "STR Pronunciation Practice", class: "STR Advanced", deadline: "25/04/2024", submitted: 5, total: 10, status: "Đang mở" },
+  { id: "BT-005", title: "TOEIC Listening - Part 1 & 2", class: "TOEIC 450", deadline: "19/04/2024", submitted: 8, total: 8, status: "Hết hạn" },
+];
+
+export const leaves = [
+  { id: "XN-001", name: "Nguyễn Văn Hùng", role: "Giáo viên PRM", type: "Nghỉ phép năm", from: "20/04/2024", to: "25/04/2024", days: 5, reason: "Du lịch gia đình", status: "Chờ duyệt", submitted: "18/04/2024" },
+  { id: "XN-002", name: "Phạm Thị Thu", role: "Kế toán", type: "Nghỉ ốm", from: "19/04/2024", to: "20/04/2024", days: 2, reason: "Bệnh cần nghỉ ngơi", status: "Đã duyệt", submitted: "18/04/2024" },
+  { id: "XN-003", name: "Lê Văn Khoa", role: "Tư vấn viên", type: "Nghỉ không lương", from: "22/04/2024", to: "22/04/2024", days: 1, reason: "Việc cá nhân", status: "Từ chối", submitted: "17/04/2024" },
+];
+
+export const questions = [
+  { id: "CH-001", content: "What is the main purpose of the TOEIC exam?", type: "Nhiều đáp án", subject: "TOEIC", tags: ["Reading", "Vocabulary"], difficulty: 3, answers: 4 },
+  { id: "CH-002", content: "Choose the correct form of the verb in the sentence: She ___ to the office every day.", type: "Nối 2 cột", subject: "TOEIC", tags: ["Grammar", "Tense"], difficulty: 2, answers: 2 },
+  { id: "CH-003", content: "Nghe đoạn hội thoại và chọn đáp án đúng nhất.", type: "Câu trả lời ngắn", subject: "IELTS", tags: ["Listening"], difficulty: 4, answers: 1 },
+  { id: "CH-004", content: "Read the passage and answer: What is the author's main argument?", type: "Nhiều đáp án", subject: "IELTS", tags: ["Reading", "Comprehension"], difficulty: 5, answers: 4 },
+  { id: "CH-005", content: "Điền vào chỗ trống: Management ___ a key role in organizational success.", type: "Câu trả lời ngắn", subject: "MOV", tags: ["Vocabulary", "Business"], difficulty: 3, answers: 1 },
+];
+
+export const students = [
+  { id: "ST-001", name: "Nguyễn Trung Hiếu", email: "nguyentrunghieu@gmail.com", phone: "0909141284", class: "TOEIC 600", status: "Đang học", balance: "2.525.000 ₫", joined: "12/04/2024" },
+  { id: "ST-002", name: "Đào Thị Hồng Thắm", email: "daohongtham@gmail.com", phone: "0912345678", class: "IELTS 6.5", status: "Đang học", balance: "4.500.000 ₫", joined: "11/04/2024" },
+  { id: "ST-003", name: "Vũ Thị Vân Anh", email: "vuvannanh@gmail.com", phone: "0987654321", class: "TOEIC 450", status: "Hoàn thành", balance: "0 ₫", joined: "10/04/2024" },
+  { id: "ST-004", name: "Trần Văn Quyết", email: "tranvanquyet@gmail.com", phone: "0977123456", class: "PRM Basic", status: "Tạm dừng", balance: "1.000.000 ₫", joined: "09/04/2024" },
+  { id: "ST-005", name: "Nguyễn Văn Nam", email: "nguyenvannam@gmail.com", phone: "0966666666", class: "STR Advanced", status: "Đang học", balance: "3.000.000 ₫", joined: "08/04/2024" },
+  { id: "ST-006", name: "Lê Thị Mai", email: "lethimai@gmail.com", phone: "0955111222", class: "IELTS 5.5", status: "Đang học", balance: "1.500.000 ₫", joined: "07/04/2024" },
+  { id: "ST-007", name: "Phạm Minh Khang", email: "phamkhang@gmail.com", phone: "0944333444", class: "TOEIC 750", status: "Hoàn thành", balance: "0 ₫", joined: "06/04/2024" },
+  { id: "ST-008", name: "Bùi Thị Lan", email: "buitlan@gmail.com", phone: "0933555666", class: "MOV Basic", status: "Đang học", balance: "2.000.000 ₫", joined: "05/04/2024" },
+];
+
+export const tasks = [
+  { id: "CV-001", title: "Tư vấn học viên mới - Nguyễn Trung Hiếu", assignee: "Trần Minh Đức", deadline: "21/04/2024", priority: "Cao", status: "Đang thực hiện" },
+  { id: "CV-002", title: "Cập nhật tài liệu khóa học TOEIC 600", assignee: "Nguyễn Minh Tuấn", deadline: "22/04/2024", priority: "Trung bình", status: "Chưa bắt đầu" },
+  { id: "CV-003", title: "Liên hệ học viên chưa đóng học phí", assignee: "Phạm Thị Thu", deadline: "20/04/2024", priority: "Cao", status: "Hoàn thành" },
+  { id: "CV-004", title: "Sắp xếp lịch học bù lớp IELTS 6.5", assignee: "Vũ Thị Hằng", deadline: "23/04/2024", priority: "Thấp", status: "Chưa bắt đầu" },
+  { id: "CV-005", title: "Gửi thông báo khai giảng lớp mới", assignee: "Trần Minh Đức", deadline: "25/04/2024", priority: "Trung bình", status: "Đang thực hiện" },
+];
+
+export const teachers = [
+  { id: "GV-001", name: "Nguyễn Minh Tuấn", email: "tuannm@centerbrain.vn", phone: "0901234567", subject: "TOEIC", classes: 3, students: 52, rating: 4.8, status: "Đang dạy", joined: "01/09/2022" },
+  { id: "GV-002", name: "Trần Thị Hoa", email: "hoatt@centerbrain.vn", phone: "0912345678", subject: "IELTS", classes: 2, students: 30, rating: 4.9, status: "Đang dạy", joined: "15/01/2023" },
+  { id: "GV-003", name: "Phạm Văn Lộc", email: "locpv@centerbrain.vn", phone: "0923456789", subject: "MOV", classes: 1, students: 12, rating: 4.5, status: "Đang dạy", joined: "01/03/2023" },
+  { id: "GV-004", name: "Lê Thị Mai", email: "mailt@centerbrain.vn", phone: "0934567890", subject: "TOEIC", classes: 2, students: 28, rating: 4.7, status: "Đang dạy", joined: "01/06/2023" },
+  { id: "GV-005", name: "Nguyễn Văn Hùng", email: "hungnv@centerbrain.vn", phone: "0945678901", subject: "PRM", classes: 0, students: 0, rating: 4.6, status: "Nghỉ phép", joined: "01/08/2022" },
+  { id: "GV-006", name: "Đỗ Thị Lan", email: "landt@centerbrain.vn", phone: "0956789012", subject: "STR", classes: 1, students: 10, rating: 4.4, status: "Đang dạy", joined: "15/10/2023" },
+];
+
+export const users = [
+  { id: "NV-001", name: "Nguyễn Thị Lan", email: "lannt@centerbrain.vn", phone: "0901111111", role: "Admin", department: "Quản lý", status: "Hoạt động", lastLogin: "20/04/2024 14:32" },
+  { id: "NV-002", name: "Trần Minh Đức", email: "ductm@centerbrain.vn", phone: "0902222222", role: "Tư vấn viên", department: "CRM", status: "Hoạt động", lastLogin: "20/04/2024 09:15" },
+  { id: "NV-003", name: "Phạm Thị Thu", email: "thupt@centerbrain.vn", phone: "0903333333", role: "Kế toán", department: "Tài chính", status: "Hoạt động", lastLogin: "19/04/2024 17:00" },
+  { id: "NV-004", name: "Lê Văn Khoa", email: "khoalv@centerbrain.vn", phone: "0904444444", role: "Tư vấn viên", department: "CRM", status: "Tạm khóa", lastLogin: "15/04/2024 10:00" },
+  { id: "NV-005", name: "Vũ Thị Hằng", email: "hangvt@centerbrain.vn", phone: "0905555555", role: "Hành chính", department: "HRM", status: "Hoạt động", lastLogin: "20/04/2024 08:00" },
+];

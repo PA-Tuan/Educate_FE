@@ -4,38 +4,7 @@ import { Card } from "@/components/ui/Card";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
 import { Users, GraduationCap, BookOpen, DollarSign, TrendingUp, Star, Clock, ArrowUp, ArrowDown } from "lucide-react";
 
-const attendanceData = [
-  { name: "Đúng giờ", value: 30, color: "#2563EB" },
-  { name: "Đi muộn", value: 20, color: "#F59E0B" },
-  { name: "Nghỉ có phép", value: 10, color: "#10B981" },
-  { name: "Nghỉ không phép", value: 25, color: "#EF4444" },
-  { name: "Chưa điểm danh", value: 15, color: "#9CA3AF" },
-];
-
-const homeworkData = [
-  { name: "Đã chấm", value: 15, color: "#047857" },
-  { name: "Đã nộp", value: 35, color: "#10B981" },
-  { name: "Chưa nộp", value: 25, color: "#34D399" },
-  { name: "Hết hạn", value: 25, color: "#D1FAE5" },
-];
-
-const progressData = [
-  { name: "TOEIC", percent: 40 },
-  { name: "IELTS", percent: 60 },
-  { name: "MOV", percent: 70 },
-  { name: "PRM", percent: 10 },
-  { name: "STR", percent: 90 },
-];
-
-const revenueData = [
-  { month: "T1", revenue: 12 },
-  { month: "T2", revenue: 19 },
-  { month: "T3", revenue: 15 },
-  { month: "T4", revenue: 25 },
-  { month: "T5", revenue: 22 },
-  { month: "T6", revenue: 30 },
-  { month: "T7", revenue: 28 },
-];
+import { attendanceData, homeworkData, progressData, revenueData, recentStudents } from "@/mockData";
 
 const statCards = [
   { label: "Tổng học viên", value: "1,248", change: "+12%", up: true, icon: <Users size={20} />, color: "bg-blue-50 text-blue-600" },
@@ -44,13 +13,6 @@ const statCards = [
   { label: "Doanh thu tháng", value: "85,4M ₫", change: "+18%", up: true, icon: <DollarSign size={20} />, color: "bg-amber-50 text-amber-600" },
 ];
 
-const recentStudents = [
-  { name: "Nguyễn Trung Hiếu", class: "TOEIC 600", status: "Đang học", date: "12/04/2024" },
-  { name: "Đào Thị Hồng Thắm", class: "IELTS 6.5", status: "Đang học", date: "11/04/2024" },
-  { name: "Vũ Thị Vân Anh", class: "TOEIC 450", status: "Hoàn thành", date: "10/04/2024" },
-  { name: "Trần Văn Quyết", class: "PRM Basic", status: "Tạm dừng", date: "09/04/2024" },
-  { name: "Nguyễn Văn Nam", class: "STR Advanced", status: "Đang học", date: "08/04/2024" },
-];
 
 const statusColor: Record<string, string> = {
   "Đang học": "bg-success-light text-success-dark",

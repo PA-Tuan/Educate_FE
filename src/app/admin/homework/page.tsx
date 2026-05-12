@@ -2,14 +2,7 @@
 import { Card } from "@/components/ui/Card";
 import { FileText, Plus, Search, Filter, MoreHorizontal, Eye, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-
-const homework = [
-  { id: "BT-001", title: "TOEIC Practice Test 1 - Part 5 & 6", class: "TOEIC 600", deadline: "20/04/2024", submitted: 14, total: 18, status: "Đang mở" },
-  { id: "BT-002", title: "IELTS Writing Task 2 - Opinion Essay", class: "IELTS 6.5", deadline: "22/04/2024", submitted: 10, total: 15, status: "Đang mở" },
-  { id: "BT-003", title: "MOV Vocabulary Unit 3", class: "MOV Basic", deadline: "18/04/2024", submitted: 12, total: 12, status: "Hết hạn" },
-  { id: "BT-004", title: "STR Pronunciation Practice", class: "STR Advanced", deadline: "25/04/2024", submitted: 5, total: 10, status: "Đang mở" },
-  { id: "BT-005", title: "TOEIC Listening - Part 1 & 2", class: "TOEIC 450", deadline: "19/04/2024", submitted: 8, total: 8, status: "Hết hạn" },
-];
+import { homework } from "@/mockData";
 
 const statusColor: Record<string, string> = {
   "Đang mở": "bg-success-light text-success-dark",

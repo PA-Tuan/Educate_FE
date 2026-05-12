@@ -3,14 +3,7 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { Search, Plus, Filter, MoreHorizontal, Eye, Sparkles, Star, Trash2, ChevronLeft, ChevronRight, Bold, Italic, Underline, AlignLeft, AlignJustify, Link, Image, MoreVertical, Strikethrough, List } from "lucide-react";
-
-const questions = [
-  { id: "CH-001", content: "What is the main purpose of the TOEIC exam?", type: "Nhiều đáp án", subject: "TOEIC", tags: ["Reading", "Vocabulary"], difficulty: 3, answers: 4 },
-  { id: "CH-002", content: "Choose the correct form of the verb in the sentence: She ___ to the office every day.", type: "Nối 2 cột", subject: "TOEIC", tags: ["Grammar", "Tense"], difficulty: 2, answers: 2 },
-  { id: "CH-003", content: "Nghe đoạn hội thoại và chọn đáp án đúng nhất.", type: "Câu trả lời ngắn", subject: "IELTS", tags: ["Listening"], difficulty: 4, answers: 1 },
-  { id: "CH-004", content: "Read the passage and answer: What is the author's main argument?", type: "Nhiều đáp án", subject: "IELTS", tags: ["Reading", "Comprehension"], difficulty: 5, answers: 4 },
-  { id: "CH-005", content: "Điền vào chỗ trống: Management ___ a key role in organizational success.", type: "Câu trả lời ngắn", subject: "MOV", tags: ["Vocabulary", "Business"], difficulty: 3, answers: 1 },
-];
+import { questions } from "@/mockData";
 
 const difficultyStars = (n: number) => Array.from({ length: 5 }, (_, i) => (
   <Star key={i} size={13} className={i < n ? "text-amber-400 fill-amber-400" : "text-gray-200 fill-gray-200"} />

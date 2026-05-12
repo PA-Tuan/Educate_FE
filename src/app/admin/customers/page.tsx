@@ -3,14 +3,7 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { Search, Plus, Filter, MoreHorizontal, Eye, Users, Clock, ChevronLeft, ChevronRight } from "lucide-react";
-
-const customers = [
-  { id: "CT-001", name: "Nguyễn Trung Hiếu", email: "tungtranthe@gmail.com", phone: "0909141284", source: "Facebook", status: "Đang diễn ra", assignees: ["A", "B", "C"], students: 2, date: "14/12/2024" },
-  { id: "CT-002", name: "Đào Thị Hồng Thắm", email: "hocthu@gmail.com", phone: "0912345678", source: "Zalo", status: "Đã chuyển đổi", assignees: ["D"], students: 1, date: "13/12/2024" },
-  { id: "CT-003", name: "Vũ Thị Vân Anh", email: "vuvannanh@gmail.com", phone: "0987654321", source: "Website", status: "Mới", assignees: ["A", "E"], students: 0, date: "12/12/2024" },
-  { id: "CT-004", name: "Trần Văn Quyết", email: "tranvanquyet@gmail.com", phone: "0977123456", source: "Giới thiệu", status: "Đang diễn ra", assignees: ["B"], students: 3, date: "11/12/2024" },
-  { id: "CT-005", name: "Nguyễn Văn Nam", email: "nguyenvannam@gmail.com", phone: "0966666666", source: "Facebook", status: "Tư vấn", assignees: ["C", "D"], students: 1, date: "10/12/2024" },
-];
+import { customers } from "@/mockData";
 
 const statusMap: Record<string, string> = {
   "Đang diễn ra": "bg-primary-light text-primary",

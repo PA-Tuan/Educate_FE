@@ -1,19 +1,8 @@
 "use client";
 
 import { Card } from "@/components/ui/Card";
-import { Calendar, Plus, ChevronLeft, ChevronRight } from "lucide-react";
-
-const days = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
-const hours = ["7:00", "8:00", "9:00", "10:00", "11:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"];
-
-const events = [
-  { day: 0, hour: 0, title: "TOEIC 600 - Buổi sáng", teacher: "Nguyễn Minh Tuấn", room: "P.101", color: "bg-primary-light border-primary text-primary" },
-  { day: 1, hour: 4, title: "IELTS 6.5 - Buổi chiều", teacher: "Trần Thị Hoa", room: "P.102", color: "bg-violet-50 border-violet-400 text-violet-700" },
-  { day: 2, hour: 0, title: "TOEIC 600 - Buổi sáng", teacher: "Nguyễn Minh Tuấn", room: "P.101", color: "bg-primary-light border-primary text-primary" },
-  { day: 4, hour: 2, title: "MOV Basic", teacher: "Phạm Văn Lộc", room: "P.103", color: "bg-emerald-50 border-emerald-400 text-emerald-700" },
-  { day: 5, hour: 1, title: "STR Weekend", teacher: "Đỗ Thị Lan", room: "P.201", color: "bg-amber-50 border-amber-400 text-amber-700" },
-  { day: 6, hour: 1, title: "STR Weekend", teacher: "Đỗ Thị Lan", room: "P.201", color: "bg-amber-50 border-amber-400 text-amber-700" },
-];
+import { Plus, ChevronLeft, ChevronRight } from "lucide-react";
+import { days, hours, events } from "@/mockData";
 
 export default function CalendarPage() {
   return (

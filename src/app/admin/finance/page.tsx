@@ -5,23 +5,7 @@ import { Card } from "@/components/ui/Card";
 import { Search, Filter, ChevronLeft, ChevronRight, TrendingUp, TrendingDown, DollarSign, AlertCircle } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from "recharts";
 
-const monthlyData = [
-  { month: "T1", income: 45, expense: 12 },
-  { month: "T2", income: 52, expense: 15 },
-  { month: "T3", income: 48, expense: 10 },
-  { month: "T4", income: 70, expense: 18 },
-  { month: "T5", income: 63, expense: 20 },
-  { month: "T6", income: 85, expense: 22 },
-];
-
-const transactions = [
-  { id: "HD-001", student: "Nguyễn Trung Hiếu", type: "Nạp học phí", amount: "+4.500.000 ₫", method: "Chuyển khoản", date: "12/04/2024", status: "Thành công" },
-  { id: "HD-002", student: "Đào Thị Hồng Thắm", type: "Nạp học phí", amount: "+3.000.000 ₫", method: "Tiền mặt", date: "11/04/2024", status: "Thành công" },
-  { id: "HD-003", student: "Vũ Thị Vân Anh", type: "Hoàn học phí", amount: "-1.500.000 ₫", method: "Chuyển khoản", date: "10/04/2024", status: "Thành công" },
-  { id: "HD-004", student: "Trần Văn Quyết", type: "Nạp học phí", amount: "+2.000.000 ₫", method: "Momo", date: "09/04/2024", status: "Đang xử lý" },
-  { id: "HD-005", student: "Nguyễn Văn Nam", type: "Nạp học phí", amount: "+5.000.000 ₫", method: "Chuyển khoản", date: "08/04/2024", status: "Thành công" },
-  { id: "HD-006", student: "Lê Thị Mai", type: "Hoàn học phí", amount: "-500.000 ₫", method: "Tiền mặt", date: "07/04/2024", status: "Thành công" },
-];
+import { monthlyData, transactions } from "@/mockData";
 
 const statusColor: Record<string, string> = {
   "Thành công": "bg-success-light text-success-dark",

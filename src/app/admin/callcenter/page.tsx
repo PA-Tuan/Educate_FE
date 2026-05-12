@@ -2,13 +2,7 @@
 import { Card } from "@/components/ui/Card";
 import { Phone, Plus, Search, PhoneCall, PhoneMissed, PhoneIncoming } from "lucide-react";
 import { useState } from "react";
-
-const calls = [
-  { id: "GD-001", customer: "Nguyễn Trung Hiếu", phone: "0909141284", duration: "09:14:00", result: "Liên hệ thành công", agent: "Trần Minh Đức", time: "21/06/2024 03:14:00", type: "out" },
-  { id: "GD-002", customer: "Đào Thị Hồng Thắm", phone: "0912345678", duration: "05:32:00", result: "Tư vấn kiểm tra đầu vào", agent: "Vũ Thị Hằng", time: "20/06/2024 14:30:00", type: "in" },
-  { id: "GD-003", customer: "Trần Văn Quyết", phone: "0977123456", duration: "00:00:00", result: "Không nghe máy", agent: "Trần Minh Đức", time: "19/06/2024 10:00:00", type: "missed" },
-  { id: "GD-004", customer: "Nguyễn Văn Nam", phone: "0966666666", duration: "12:05:00", result: "Tư vấn khóa học", agent: "Vũ Thị Hằng", time: "18/06/2024 09:00:00", type: "out" },
-];
+import { calls } from "@/mockData";
 
 const callIcon = { out: <PhoneCall size={14} className="text-success" />, in: <PhoneIncoming size={14} className="text-primary" />, missed: <PhoneMissed size={14} className="text-error" /> };
 const callLabel = { out: "Gọi đi", in: "Gọi đến", missed: "Nhỡ" };

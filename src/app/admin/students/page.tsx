@@ -4,17 +4,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { Search, Plus, Filter, MoreHorizontal, ChevronLeft, ChevronRight, Eye } from "lucide-react";
 import Link from "next/link";
-
-const students = [
-  { id: "ST-001", name: "Nguyễn Trung Hiếu", email: "nguyentrunghieu@gmail.com", phone: "0909141284", class: "TOEIC 600", status: "Đang học", balance: "2.525.000 ₫", joined: "12/04/2024" },
-  { id: "ST-002", name: "Đào Thị Hồng Thắm", email: "daohongtham@gmail.com", phone: "0912345678", class: "IELTS 6.5", status: "Đang học", balance: "4.500.000 ₫", joined: "11/04/2024" },
-  { id: "ST-003", name: "Vũ Thị Vân Anh", email: "vuvannanh@gmail.com", phone: "0987654321", class: "TOEIC 450", status: "Hoàn thành", balance: "0 ₫", joined: "10/04/2024" },
-  { id: "ST-004", name: "Trần Văn Quyết", email: "tranvanquyet@gmail.com", phone: "0977123456", class: "PRM Basic", status: "Tạm dừng", balance: "1.000.000 ₫", joined: "09/04/2024" },
-  { id: "ST-005", name: "Nguyễn Văn Nam", email: "nguyenvannam@gmail.com", phone: "0966666666", class: "STR Advanced", status: "Đang học", balance: "3.000.000 ₫", joined: "08/04/2024" },
-  { id: "ST-006", name: "Lê Thị Mai", email: "lethimai@gmail.com", phone: "0955111222", class: "IELTS 5.5", status: "Đang học", balance: "1.500.000 ₫", joined: "07/04/2024" },
-  { id: "ST-007", name: "Phạm Minh Khang", email: "phamkhang@gmail.com", phone: "0944333444", class: "TOEIC 750", status: "Hoàn thành", balance: "0 ₫", joined: "06/04/2024" },
-  { id: "ST-008", name: "Bùi Thị Lan", email: "buitlan@gmail.com", phone: "0933555666", class: "MOV Basic", status: "Đang học", balance: "2.000.000 ₫", joined: "05/04/2024" },
-];
+import { students } from "@/mockData";
 
 const statusColor: Record<string, string> = {
   "Đang học": "bg-success-light text-success-dark",

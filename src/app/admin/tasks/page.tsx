@@ -2,14 +2,7 @@
 import { Card } from "@/components/ui/Card";
 import { Briefcase, Plus, Search, ChevronLeft, ChevronRight, MoreHorizontal, Circle } from "lucide-react";
 import { useState } from "react";
-
-const tasks = [
-  { id: "CV-001", title: "Tư vấn học viên mới - Nguyễn Trung Hiếu", assignee: "Trần Minh Đức", deadline: "21/04/2024", priority: "Cao", status: "Đang thực hiện" },
-  { id: "CV-002", title: "Cập nhật tài liệu khóa học TOEIC 600", assignee: "Nguyễn Minh Tuấn", deadline: "22/04/2024", priority: "Trung bình", status: "Chưa bắt đầu" },
-  { id: "CV-003", title: "Liên hệ học viên chưa đóng học phí", assignee: "Phạm Thị Thu", deadline: "20/04/2024", priority: "Cao", status: "Hoàn thành" },
-  { id: "CV-004", title: "Sắp xếp lịch học bù lớp IELTS 6.5", assignee: "Vũ Thị Hằng", deadline: "23/04/2024", priority: "Thấp", status: "Chưa bắt đầu" },
-  { id: "CV-005", title: "Gửi thông báo khai giảng lớp mới", assignee: "Trần Minh Đức", deadline: "25/04/2024", priority: "Trung bình", status: "Đang thực hiện" },
-];
+import { tasks } from "@/mockData";
 
 const statusColor: Record<string, string> = {
   "Đang thực hiện": "bg-primary-light text-primary",

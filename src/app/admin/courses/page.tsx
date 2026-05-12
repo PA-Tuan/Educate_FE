@@ -3,14 +3,7 @@
 import { Card } from "@/components/ui/Card";
 import { BookOpen, Plus, Search, Filter, MoreHorizontal, Eye, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-
-const courses = [
-  { id: "KH-001", name: "TOEIC Cơ bản", code: "TOEIC-BASIC", classes: 4, students: 72, duration: "3 tháng", fee: "3.500.000 ₫", status: "Đang mở" },
-  { id: "KH-002", name: "IELTS 6.5+", code: "IELTS-65", classes: 2, students: 30, duration: "5 tháng", fee: "6.000.000 ₫", status: "Đang mở" },
-  { id: "KH-003", name: "MOV Foundation", code: "MOV-FOUND", classes: 1, students: 12, duration: "2 tháng", fee: "2.000.000 ₫", status: "Đang mở" },
-  { id: "KH-004", name: "PRM Advanced", code: "PRM-ADV", classes: 0, students: 0, duration: "4 tháng", fee: "5.000.000 ₫", status: "Tạm dừng" },
-  { id: "KH-005", name: "STR Speaking", code: "STR-SPEAK", classes: 1, students: 10, duration: "2 tháng", fee: "2.500.000 ₫", status: "Đang mở" },
-];
+import { courses } from "@/mockData";
 
 const statusColor: Record<string, string> = {
   "Đang mở": "bg-success-light text-success-dark",

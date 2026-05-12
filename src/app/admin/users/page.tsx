@@ -3,14 +3,7 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { Search, Plus, Filter, MoreHorizontal, Eye, Shield, ChevronLeft, ChevronRight } from "lucide-react";
-
-const users = [
-  { id: "NV-001", name: "Nguyễn Thị Lan", email: "lannt@centerbrain.vn", phone: "0901111111", role: "Admin", department: "Quản lý", status: "Hoạt động", lastLogin: "20/04/2024 14:32" },
-  { id: "NV-002", name: "Trần Minh Đức", email: "ductm@centerbrain.vn", phone: "0902222222", role: "Tư vấn viên", department: "CRM", status: "Hoạt động", lastLogin: "20/04/2024 09:15" },
-  { id: "NV-003", name: "Phạm Thị Thu", email: "thupt@centerbrain.vn", phone: "0903333333", role: "Kế toán", department: "Tài chính", status: "Hoạt động", lastLogin: "19/04/2024 17:00" },
-  { id: "NV-004", name: "Lê Văn Khoa", email: "khoalv@centerbrain.vn", phone: "0904444444", role: "Tư vấn viên", department: "CRM", status: "Tạm khóa", lastLogin: "15/04/2024 10:00" },
-  { id: "NV-005", name: "Vũ Thị Hằng", email: "hangvt@centerbrain.vn", phone: "0905555555", role: "Hành chính", department: "HRM", status: "Hoạt động", lastLogin: "20/04/2024 08:00" },
-];
+import { users } from "@/mockData";
 
 const roleColor: Record<string, string> = {
   "Admin": "bg-violet-100 text-violet-700",

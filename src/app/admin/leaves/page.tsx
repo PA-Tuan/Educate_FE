@@ -2,12 +2,7 @@
 import { Card } from "@/components/ui/Card";
 import { FileText, Plus, Search, ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 import { useState } from "react";
-
-const leaves = [
-  { id: "XN-001", name: "Nguyễn Văn Hùng", role: "Giáo viên PRM", type: "Nghỉ phép năm", from: "20/04/2024", to: "25/04/2024", days: 5, reason: "Du lịch gia đình", status: "Chờ duyệt", submitted: "18/04/2024" },
-  { id: "XN-002", name: "Phạm Thị Thu", role: "Kế toán", type: "Nghỉ ốm", from: "19/04/2024", to: "20/04/2024", days: 2, reason: "Bệnh cần nghỉ ngơi", status: "Đã duyệt", submitted: "18/04/2024" },
-  { id: "XN-003", name: "Lê Văn Khoa", role: "Tư vấn viên", type: "Nghỉ không lương", from: "22/04/2024", to: "22/04/2024", days: 1, reason: "Việc cá nhân", status: "Từ chối", submitted: "17/04/2024" },
-];
+import { leaves } from "@/mockData";
 
 const statusColor: Record<string, string> = {
   "Chờ duyệt": "bg-warning-light text-warning-dark",

@@ -3,15 +3,7 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { Search, Plus, Filter, MoreHorizontal, Eye, ChevronLeft, ChevronRight, Users, BookOpen } from "lucide-react";
-
-const classes = [
-  { id: "LH-001", name: "TOEIC 600 - Buổi sáng", course: "TOEIC", teacher: "Nguyễn Minh Tuấn", students: 18, maxStudents: 20, schedule: "T2-T4-T6 | 7:30 - 9:30", status: "Đang học", startDate: "01/03/2024", endDate: "01/06/2024" },
-  { id: "LH-002", name: "IELTS 6.5 - Buổi tối", course: "IELTS", teacher: "Trần Thị Hoa", students: 15, maxStudents: 15, schedule: "T3-T5-T7 | 18:00 - 20:00", status: "Đang học", startDate: "15/03/2024", endDate: "15/07/2024" },
-  { id: "LH-003", name: "MOV Basic - Cuối tuần", course: "MOV", teacher: "Phạm Văn Lộc", students: 12, maxStudents: 20, schedule: "T7-CN | 9:00 - 11:30", status: "Đang học", startDate: "01/04/2024", endDate: "01/07/2024" },
-  { id: "LH-004", name: "TOEIC 450 - Cấp tốc", course: "TOEIC", teacher: "Lê Thị Mai", students: 8, maxStudents: 10, schedule: "T2-T4-T6-T7 | 14:00 - 16:00", status: "Sắp khai giảng", startDate: "01/05/2024", endDate: "01/07/2024" },
-  { id: "LH-005", name: "PRM Advanced - Buổi tối", course: "PRM", teacher: "Nguyễn Văn Hùng", students: 20, maxStudents: 20, schedule: "T2-T4 | 19:00 - 21:00", status: "Hoàn thành", startDate: "01/01/2024", endDate: "01/04/2024" },
-  { id: "LH-006", name: "STR Advanced - Cuối tuần", course: "STR", teacher: "Đỗ Thị Lan", students: 10, maxStudents: 15, schedule: "CN | 14:00 - 17:00", status: "Đang học", startDate: "10/04/2024", endDate: "10/07/2024" },
-];
+import { classes } from "@/mockData";
 
 const statusColor: Record<string, string> = {
   "Đang học": "bg-success-light text-success-dark",

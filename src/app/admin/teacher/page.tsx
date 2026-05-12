@@ -3,15 +3,7 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { Search, Plus, Filter, MoreHorizontal, Eye, Star, ChevronLeft, ChevronRight, Mail, Phone } from "lucide-react";
-
-const teachers = [
-  { id: "GV-001", name: "Nguyễn Minh Tuấn", email: "tuannm@centerbrain.vn", phone: "0901234567", subject: "TOEIC", classes: 3, students: 52, rating: 4.8, status: "Đang dạy", joined: "01/09/2022" },
-  { id: "GV-002", name: "Trần Thị Hoa", email: "hoatt@centerbrain.vn", phone: "0912345678", subject: "IELTS", classes: 2, students: 30, rating: 4.9, status: "Đang dạy", joined: "15/01/2023" },
-  { id: "GV-003", name: "Phạm Văn Lộc", email: "locpv@centerbrain.vn", phone: "0923456789", subject: "MOV", classes: 1, students: 12, rating: 4.5, status: "Đang dạy", joined: "01/03/2023" },
-  { id: "GV-004", name: "Lê Thị Mai", email: "mailt@centerbrain.vn", phone: "0934567890", subject: "TOEIC", classes: 2, students: 28, rating: 4.7, status: "Đang dạy", joined: "01/06/2023" },
-  { id: "GV-005", name: "Nguyễn Văn Hùng", email: "hungnv@centerbrain.vn", phone: "0945678901", subject: "PRM", classes: 0, students: 0, rating: 4.6, status: "Nghỉ phép", joined: "01/08/2022" },
-  { id: "GV-006", name: "Đỗ Thị Lan", email: "landt@centerbrain.vn", phone: "0956789012", subject: "STR", classes: 1, students: 10, rating: 4.4, status: "Đang dạy", joined: "15/10/2023" },
-];
+import { teachers } from "@/mockData";
 
 const statusColor: Record<string, string> = {
   "Đang dạy": "bg-success-light text-success-dark",
