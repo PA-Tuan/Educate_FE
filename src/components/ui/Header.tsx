@@ -18,6 +18,11 @@ const breadcrumbMap: Record<string, string[]> = {
   "/admin/leaves": ["Dashboard", "Đơn xin nghỉ"],
   "/admin/calendar": ["Dashboard", "Lịch"],
   "/admin/callcenter": ["Dashboard", "Tổng đài quản lý"],
+  "/student/dashboard": ["Student", "Tổng quan"],
+  "/student/calendar": ["Student", "Lịch học"],
+  "/student/classes": ["Student", "Lớp học của tôi"],
+  "/student/homework": ["Student", "Bài tập"],
+  "/student/finance": ["Student", "Học phí"],
 };
 
 export default function Header({ onToggleSidebar }: { onToggleSidebar?: () => void }) {

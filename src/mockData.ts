@@ -817,3 +817,20 @@ export const users = [
     lastLogin: "20/04/2024 08:00",
   },
 ];
+
+export const studentHomework = homework.map((hw, idx) => {
+  let status = "Chưa nộp";
+  let score = "-";
+  if (idx === 0) { status = "Đã nộp"; score = "Chờ chấm"; }
+  else if (idx === 1) { status = "Đã chấm"; score = "8.5/10"; }
+  else if (hw.status === "Hết hạn") { status = "Quá hạn"; }
+  
+  return { ...hw, studentStatus: status, score };
+});
+
+export const studentTransactions = transactions.map((t, i) => ({
+  ...t,
+  student: "Nguyễn Trung Hiếu",
+  amount: i % 2 === 0 ? "-3.500.000 ₫" : "+3.500.000 ₫",
+  type: i % 2 === 0 ? "Thanh toán học phí" : "Nạp tiền vào ví",
+}));
