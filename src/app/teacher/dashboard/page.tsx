@@ -9,7 +9,7 @@ import { classes, homework, events, teachers } from "@/mockData";
 
 export default function TeacherDashboard() {
   // Mock logic: Giả sử giáo viên đăng nhập là "Nguyễn Minh Tuấn"
-  const teacherName = "Nguyễn Minh Tuấn";
+  const teacherName = "Tuấn";
   const teacherInfo = teachers.find(t => t.name === teacherName);
   
   const myClasses = classes.filter(c => c.teacher === teacherName);
@@ -177,7 +177,7 @@ export default function TeacherDashboard() {
               </div>
               <div className="p-3 bg-white/60 rounded-xl">
                 <p className="text-sm font-semibold text-text-main mb-1">Nộp bảng điểm</p>
-                <p className="text-xs text-text-muted">Hạn chót nộp bảng điểm lớp TOEIC 600 là ngày 28/04.</p>
+                <p className="text-xs text-text-muted">Hạn chót nộp bảng điểm lớp TOEIC 600 là ngày 28/06.</p>
               </div>
             </div>
           </Card>

@@ -11,7 +11,7 @@ import { homework, classes } from "@/mockData";
 export default function TeacherHomeworkPage() {
   const [search, setSearch] = useState("");
   
-  const teacherName = "Nguyễn Minh Tuấn";
+  const teacherName = "Tuấn";
   const myClasses = classes.filter(c => c.teacher === teacherName);
   const classNames = myClasses.map(c => c.name.split(" - ")[0]);
   

@@ -7,7 +7,7 @@ import { BookOpen, Calendar, Clock, Users, FileSignature, FolderOpen } from "luc
 import { classes } from "@/mockData";
 
 export default function TeacherClassesPage() {
-  const teacherName = "Nguyễn Minh Tuấn";
+  const teacherName = "Tuấn";
   const myClasses = classes.filter(c => c.teacher === teacherName);
 
   return (

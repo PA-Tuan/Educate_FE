@@ -10,7 +10,7 @@ export default function TeacherCalendarPage() {
   const [currentWeek, setCurrentWeek] = useState(new Date());
 
   // Mock: Filter events for "Nguyễn Minh Tuấn"
-  const teacherName = "Nguyễn Minh Tuấn";
+  const teacherName = "Tuấn";
   const myEvents = events.filter(e => e.teacher === teacherName);
 
   const nextWeek = () => {

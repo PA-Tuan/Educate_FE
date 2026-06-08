@@ -30,8 +30,8 @@ export default function DashboardPage() {
         </div>
         <div className="flex items-center gap-2">
           <select className="border border-border rounded-btn px-3 py-2 text-sm outline-none bg-white text-text-main">
-            <option>Tháng 4 / 2024</option>
-            <option>Tháng 3 / 2024</option>
+            <option>Tháng 5 / 2026</option>
+            <option>Tháng 4 / 2026</option>
           </select>
         </div>
       </div>
@@ -152,7 +152,7 @@ export default function DashboardPage() {
             <span className="text-xs text-success font-semibold bg-success-light px-2 py-0.5 rounded-full">+18%</span>
           </div>
           <p className="text-2xl font-bold text-text-main mb-1">85,4M ₫</p>
-          <p className="text-xs text-text-muted mb-3">Tháng 4 / 2024</p>
+          <p className="text-xs text-text-muted mb-3">Tháng 6 / 2026</p>
           <ResponsiveContainer width="100%" height={100}>
             <BarChart data={revenueData} barSize={8}>
               <Bar dataKey="revenue" fill="#2563EB" radius={[4, 4, 0, 0]} />

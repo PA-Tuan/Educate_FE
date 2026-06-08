@@ -8,7 +8,7 @@ import { FilePlus, FileText, CheckCircle, Clock, XCircle } from "lucide-react";
 import { leaves } from "@/mockData";
 
 export default function TeacherLeavesPage() {
-  const teacherName = "Nguyễn Minh Tuấn";
+  const teacherName = "Tuấn";
   
   // Create some fake leave records for this teacher based on mock data structure
   const myLeaves = [
